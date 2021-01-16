@@ -1,0 +1,1 @@
+(arr, step) => arr.filter((_,i) => i% step === 0);

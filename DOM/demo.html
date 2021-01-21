@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id ="title">Hello, DOM!</h1>
+    <ul>
+        <li>DOM methods example</li>
+        <li>DOM Properties Example</li>
+    </ul>
+    <button onclick="alert(Message)">Click me</button>
+    <input type="ID" name="" id="">
+    <button id = "submit">Submit Form</button>
+    <ul>
+        <li>HTML Collection is live, while NodeLIst can be either live or static</li>
+    </ul>
+    <script>
+        function start(){
+            const liElements = document.getElementsByName('li')
+            for(let el of liElements){
+                console.log(el);
+            }
+        }
+    </script>
+
+
+</body>
+</html>

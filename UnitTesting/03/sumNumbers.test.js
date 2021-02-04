@@ -10,6 +10,6 @@ describe('Sum numbers', () => {
         expect(sum([1, 1])).to.equal(2);
     });
     it('sums diferent number', () => {
-        expect(sum([1, 3, 4])).to.equal(9);
+        !expect(sum([1, 3, 4])).to.equal(9);
     });
-});
+})

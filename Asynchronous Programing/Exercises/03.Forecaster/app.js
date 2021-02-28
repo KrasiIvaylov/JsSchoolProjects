@@ -1,0 +1,6 @@
+function attachEvents() {
+
+}
+attachEvents();
+
+async

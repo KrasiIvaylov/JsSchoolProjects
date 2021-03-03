@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    async function getDataById(id){
+        const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details/' + id);
+        const data = response.json();
+
+        console.log(data);
+    }
+
+    async function getData(){
+        const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details');
+        const data = response.json();
+
+        console.log(data);
+    }
+
+
+    async function postData() {
+        const data = {title: 'First Post', content: 'Hello, Server!'};
+        const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details', {
+            method: 'post',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify(data),
+        });
+        const result = await response.json(); console.log(result);
+    }
+
+    async function updateData(id, data) {
+        const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details/' + id, {
+            method: 'put',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        const result = await response.json();
+    }
+    async function deleteData(id){
+        const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details/' + id, {
+            method: 'delete'
+        });
+        const result = await response.json();
+    }
+</script>
+</body>
+</html>

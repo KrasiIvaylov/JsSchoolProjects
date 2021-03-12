@@ -33,11 +33,24 @@ describe('E2E tests', function () {
 
     it('toggles content', async () => {
         await page.goto('http://localhost:3000/');
-        await page.click('#main:first-child >> text=More');
-        await page.waitForSelector('#main:first-child >> .extra p');
+        await page.click('#main>.accordion:first-child >> text=More');
+        await page.waitForSelector('#main>.accordion:first-child >> .extra p');
 
-        const visible = await page.isVisible('#main:first-child >> .extra p');
+        const visible = await page.isVisible('#main>.accordion:first-child >> .extra p');
         expect(visible).to.be.true;
+    });
+
+    it('toggles content 2', async () => {
+        await page.goto('http://localhost:3000/');
+
+        await page.click('#main>.accordion:first-child >> text=More');
+
+        await page.waitForSelector('#main>.accordion:first-child >> .extra p');
+
+        await page.click('#main>.accordion:first-child >> text=Less');
+
+        const visible = await page.isVisible('#main>.accordion:first-child >> .extra p');
+        expect(visible).to.be.false;
     });
 
 

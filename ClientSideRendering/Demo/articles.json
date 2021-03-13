@@ -1,0 +1,22 @@
+[
+  {
+    "title": "First Article",
+    "content": " Lorem ipsum dolor sit amet, consectetur adipisicing elit." ,
+    "author": "Peter Peterson"
+  },
+  {
+    "title": "Second Article",
+    "content": " b aliquam aperiam aut cum, cupiditate distinctio doloremque dolores" ,
+    "author": "Sam Peterson"
+  },
+  {
+    "title": "Third Article",
+    "content": " eius et ex excepturi illum, labore minima" ,
+    "author": "Joe Peterson"
+  },
+  {
+    "title": "Fourth Article",
+    "content": " necessitatibus reiciendis tempore temporibus ut voluptatibus." ,
+    "author": "Nick Peterson"
+  }
+]

@@ -1,0 +1,42 @@
+            Client side rendering
+
+1. UI Rendering (Building Web Content)
+ - Rendering means to dynamically generate content:
+  * As opposed to having static HTML files;
+  * Can be parts of a web page, or an entire web application;
+  * Virtually all contemporary sites use dynamic generation;
+ - Can be performed on the server and on the client(browser):
+
+2.   Server-Side                vs               Client-Side
+
+     Server-Side                                          Client-Side
+ * User sends request                                 * User sends request
+ * Server generates HTML                              * CDN serves files and JS
+ * HTML is sent to the client                         * JS fetches data
+ * Browser interprets HTML                            * JS generates DOM elements
+
+***  Pros & Cons of Client-Side Rendering
+  - Benefits:
+   * The page is never reloaded, and interaction is instant;
+   * State and data can be shared across views;
+   * Only Dynamic content needs to be fetched after start;
+  - Drawbacks:
+   * Longer initial load times;
+   * not SEO-friendly(Search Engine Optimization);
+   * Poor performance with slow client machines;
+
+3. Templating.
+ - Templates allow similar content to be replicated in a web page,
+  without repeating the corresponding markup everywhere;
+
+4. Project Requirements
+ - A templating engine generally allows:
+  * Templates to be defined in files, separate from business logic;
+  * A markup syntax close to HTML to be used;
+  * Values to be inserted via rendering layouts;
+  * Templates to be composed to create layers;
+ - Additional features of some libraries:
+  * Caching os template results;
+  * Automating diff-checking and partial updates;
+
+5.

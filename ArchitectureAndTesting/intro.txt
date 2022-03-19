@@ -1,0 +1,36 @@
+            Architecture And Testing
+
+ Example Isolated Modules
+  * Backend API - specific to the used service
+  * Request logic - specific to the application business logic
+  * Data manipulation - specific to the application business logic
+  * UI(user interface) display and control
+  * Utility functions
+
+Types of Tests
+ * Unit Testing - cover separated functionality (test the result of a function with diferent input)
+  - Usage:
+    - Used to verify that a piece of code operates correctly
+    - Tested code does not involve external dependencies
+    - Fast to write and fast to execute
+    - Usually created by the developer, who is aware of the code specifics(wgite box Testing)
+    - Common tools include Mocha, Chai, QUnit, Jasmine, etc.
+
+ * Integration tests - cover the communication inside and between entire Modules
+  - Usage:
+    (test if data comming from a remote request is correctly interpreted by the business logic)
+    - Used to check the communication between multiple code elements
+    - They often require the inclusion of external dependencies
+    - Relatively complex to create(due to external dependencies)
+    - Can be delegated to a seperate team, not involved in the writing of the code(black box texting)
+    - Common toold include Sinon, JMock, Mockito etc.
+
+ * End-to-End (functional) tests - cover all steps that occur when the user performs an action,
+    from the UI, to the DB, and back
+  - Usage:
+    - Functional tests are used to run through the entire application, in a real environment
+    - Usually involves the whole technological stack(REST services, database operations, authentication, etc.)
+    - Depending on the expected outcome and tools used, their complexity is comparable to integration tests
+    - Mostly the concern of specialized QA automation engineers
+    - Common tools include Selenium, Puppeteer, Cypress, Playright
+

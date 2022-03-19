@@ -1,0 +1,13 @@
+Single Page Applications
+
+ SPA Implementation Requirements
+    * The application has multiple views
+    * All views share a common state
+    * Modular code is used
+    * The page is not realoaded when changing views
+    * Content is loaded via AJAX
+    * New content is created by JavaScript
+
+
+ 
+    

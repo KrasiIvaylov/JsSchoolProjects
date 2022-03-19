@@ -1,0 +1,16 @@
+body{
+    width: 950px;
+    margin: auto;
+    font-size: 24px;
+}
+
+article footer{
+    color: rgb(58, 38, 78);
+}
+
+article{
+    margin: 32px;
+    box-shadow: 16;
+    box-shadow: 0px 0px 8px 8px #525050;
+}
+

@@ -1,0 +1,5 @@
+Handling Dom Events & Event listeners
+
+Event е начин да регистраме реакция от user под всякаква форма
+
+variable.setInterval - позволява кода да изпълнява функция през определен интервал.
